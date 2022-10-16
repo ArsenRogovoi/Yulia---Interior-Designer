@@ -1,0 +1,359 @@
+/* css variables start */
+
+:root {
+  --heightOfLogoBlock: document.getElementById("logo_block") .style.height;
+}
+
+/* css variables start */
+
+/***/
+
+/* fonts start */
+/* poiret-one-regular - latin-ext_latin_cyrillic */
+@font-face {
+  font-family: "Poiret One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poiret-one-v14-latin-ext_latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poiret-one-v14-latin-ext_latin_cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../fonts/poiret-one-v14-latin-ext_latin_cyrillic-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/poiret-one-v14-latin-ext_latin_cyrillic-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../fonts/poiret-one-v14-latin-ext_latin_cyrillic-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/poiret-one-v14-latin-ext_latin_cyrillic-regular.svg#PoiretOne")
+      format("svg"); /* Legacy iOS */
+}
+/* fonts end */
+
+body {
+  font-family: "Poiret One";
+  background-color: #e4e4e4;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* main section style start */
+.main_section {
+  height: 100vh;
+  background-image: url("../img/white-sideboard-living-room-interior-with-copy-space_43614-800.jpg");
+  background-size: cover;
+}
+
+header {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.logo {
+  text-align: center;
+  font-size: 200%;
+  padding: 5% 0%;
+  font-weight: 800;
+  color: #88bd88;
+  background-color: #0000006e;
+}
+
+.main_menu {
+  position: fixed;
+  width: 100%;
+  top: var(--heightOfLogoBlock);
+  right: 0%;
+}
+
+.hamburger_icon {
+  position: absolute;
+  right: 2.5%;
+  top: 2%;
+  font-size: 200%;
+  border: 0px solid black;
+  border-radius: 5px;
+  color: #e4e4e4;
+  background-color: #4e4e4e;
+  padding: 2% 3%;
+}
+
+.main_menu_list {
+  display: none;
+  background-color: #4e4e4e;
+}
+
+.main_menu_list_visible {
+  display: block;
+}
+
+header nav ul a {
+  text-decoration: none;
+}
+
+header nav ul li {
+  color: white;
+  font-size: 150%;
+  padding: 4% 0% 4% 2%;
+}
+
+.about_main_menu_list_item {
+  white-space: nowrap;
+}
+
+/* main section style end */
+
+/***/
+
+/* services section style start */
+
+.services_section_title {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 600;
+  padding: 2% 0% 5% 0%;
+}
+
+.service_card {
+  padding: 5%;
+  text-align: center;
+}
+
+.service_icon {
+  font-size: 200%;
+  color: #88bd88;
+}
+
+.service_title {
+  font-weight: 600;
+  font-size: 125%;
+  padding: 2%;
+}
+
+.service_desc {
+  font-size: 110%;
+}
+/* services section style end */
+
+/***/
+
+/* portfolio section style start */
+
+.portfolio_section_title {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 600;
+  padding: 10% 0% 5% 0%;
+}
+
+.portfolio_card {
+  padding: 5%;
+}
+
+.portfolio_card a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.portfolio_card_img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.portfolio_card_title {
+  text-align: center;
+  font-size: 125%;
+  font-weight: 600;
+  padding: 2%;
+}
+/* portfolio section style end */
+
+/***/
+
+/* about section style start */
+
+.about_section_title {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 600;
+  padding: 10% 0% 5% 0%;
+}
+
+.about_section_photo {
+  max-width: 50%;
+  float: left;
+  border-radius: 5px;
+  padding: 0% 5% 0% 0%;
+}
+/* about section style end */
+
+/***/
+
+/* contacts section style start */
+.contacts_section {
+  clear: left;
+}
+
+.contacts_section_title {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 600;
+  padding: 10% 0% 10% 0%;
+}
+
+.contacts_section_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.contacts_section_container a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #000000;
+  width: 45%;
+}
+
+.contact_card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.contact_icon {
+  text-align: center;
+  padding: 5%;
+}
+
+.contact_link_title {
+  text-align: center;
+}
+
+.phone_number {
+  font-size: 80%;
+}
+/* contacts section style end */
+
+/***/
+
+/* media queries for diferent types of screens start */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header {
+    display: flex;
+  }
+
+  .logo {
+    width: 30%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .main_menu {
+    position: unset;
+    width: 70%;
+  }
+
+  .hamburger_menu {
+    display: none;
+  }
+
+  .main_menu_list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2% 0%;
+    position: fixed;
+    top: 0;
+    right: 2.5%;
+    left: 31%;
+    background-color: #00000048;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .main_menu_list_wide {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .main_menu_list a {
+    padding: 0% 2%;
+  }
+
+  .services_section_title {
+    text-align: center;
+    font-size: 150%;
+    font-weight: 600;
+    padding: 10% 0% 5% 0%;
+  }
+
+  .services_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service_card {
+    width: 23%;
+  }
+
+  .portfolio_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio_card {
+    width: 28%;
+    padding: 2%;
+  }
+
+  .about_section_photo {
+    max-width: 30%;
+  }
+
+  .contact_card {
+    justify-content: flex-end;
+  }
+
+  .contacts_section_container a {
+    width: 25%;
+  }
+
+  .contact_icon {
+    padding: 0%;
+  }
+
+  .contact_link_title {
+    padding-top: 15px;
+  }
+
+  .envelope_icon {
+    padding-bottom: 1px;
+  }
+
+  .phone_icon {
+    padding-bottom: 7px;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .main_menu_list_visible a {
+  }
+}
+/* media queries for diferent types of screens end */
+
+/***/
